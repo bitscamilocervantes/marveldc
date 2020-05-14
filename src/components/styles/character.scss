@@ -1,0 +1,14 @@
+.character {
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .marvel > .character {
+    border: 5px solid red;
+    border-radius: 0 25% 0 25%;
+  }
+
+  .dc > .character {
+    border: 5px solid blue;
+    border-radius: 25% 0 25% 0;
+  }

@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+  }
+
+  .marvel {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .dc {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .title__marvel {
+    color: white;
+    font-size: 16px;
+    margin-top: -32px;
+    position: absolute;
+    left: 3%;
+  }
+
+  .title__dc {
+    color: white;
+    font-size: 16px;
+    margin-top: -32px;
+    position: absolute;
+    right: 43%;
+  }
