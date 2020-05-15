@@ -7,9 +7,9 @@ import Characters from '../components/Characters';
 function Marvel(){
     return (
         <React.Fragment>
-            <Header />
+            <Header htitle="Marvel Studios"/>
             <Search />
-            <Characters />
+            <Characters studio="marvel"/>
         </React.Fragment>
     );
 }

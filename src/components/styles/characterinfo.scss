@@ -1,0 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em 1em;
+    grid-template-areas: "row-1 row-2 row-2 row-2";
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .row-1 { grid-area: row-1; }
+  
+  .row-2 { 
+      grid-area: row-2; 
+      padding: 20px;
+    }
+
+.characterinfo{
+    color: #fff;
+    background: rgb(254,59,59);
+    background: radial-gradient(circle, rgba(254,59,59,1) 0%, rgba(255,93,93,1) 46%, rgba(56,5,5,1) 100%);  
+    height: auto;
+}
+.characterinfo h2{
+    font-size: 32px;
+}
+
+.characterinfo p{
+    font-size: 20px;
+}
+
+.charactername{
+    font-size: 48px;
+    margin-bottom: 5px;
+}
