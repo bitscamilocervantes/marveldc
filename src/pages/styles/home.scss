@@ -1,0 +1,39 @@
+.home-container{
+    width: 100%;
+    padding-left: 0%;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.home-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.home-msg{
+    text-align: center;
+    font-size: 48px;
+}
+
+.brand{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "left-image right-brand" "left-brand right-image";
+  }
+  
+  .left-image { grid-area: left-image; }
+  
+  .right-brand { grid-area: right-brand; }
+  
+  .left-brand { grid-area: left-brand; }
+  
+  .right-image { grid-area: right-image; }

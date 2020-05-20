@@ -1,7 +1,9 @@
 import React from 'react';
 
 import Marvel from '../pages/Marvel';
+import Dc from '../pages/Dc';
 import Details from '../pages/Details';
+import Home from '../pages/Home';
 
 import './styles/app.scss';
 
@@ -10,7 +12,7 @@ import './styles/app.scss';
 function App() {
   return (
     <div className="App">
-      <Details />
+      <Dc />
     </div>
   );
 }
