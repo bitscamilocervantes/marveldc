@@ -1,24 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import './styles/character.scss';
 
 function Character(props){
-    const { name, image } = props;
+    const { name, image, tipo} = props;
     return (
-        <a href="#">
-            <div className="character">            
-                    <img src={image} alt={name} className="image"/>
-                    <div className="middle">
-                        <div className="text">{name}</div>
-                    </div>
+        <Link to={ `${tipo}/details/${name}` }>
+            <div className="character">                  
+                <img src={image} alt={name} className="image"/>
+                <div className="middle">
+                    <div className="text">{name}</div>
+                </div>                        
             </div>
-        </a>
+        </Link> 
     );
 }
 
 Character.propTypes = {
     name: PropTypes.string.isRequired,
+    tipo: PropTypes.string,
     url: PropTypes.string,
     image: PropTypes.string.isRequired,
     biography: PropTypes.string,

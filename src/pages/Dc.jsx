@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Header from '../components/Header';
 import Search from '../components/Search';
-import Footer from '../components/Footer';
 import Characters from '../components/Characters';
 import Character from '../components/Character';
 import useInitialState from '../hooks/useInitialState';
@@ -14,14 +12,12 @@ function Dc(){
     const characters = useInitialState(endpoint);
     return (
         <React.Fragment>
-            <Header />
             <Search />
             <Characters studio="dc">
                 {characters.map((item, i) => (
-                    <Character key={i} {...item} />
+                    <Character key={i} {...item} tipo="dc" />
                 ))} 
             </Characters>
-            <Footer/>
         </React.Fragment>
     );
 }

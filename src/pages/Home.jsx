@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles/home.scss';
 
@@ -8,25 +9,34 @@ import Footer from '../components/Footer';
 function Home(){
     return (
         <React.Fragment>
-            <Header htitle="Marvel Studios"/>
             <div className="home-container">
-                <h1 class="home-msg">- Seleccione una marca de comics -</h1>
-                <div className="grid-container">
-                    <div className="left-image">
-                        <a href="/marvel"><img src="../../../public/marvel-banner.jpg"/></a>
-                    </div>
-                    <div className="right-brand brand">
-                        <a href="/marvel"><img src="../../../public/marvel_brand.png"/></a>
-                    </div>
-                    <div className="left-brand brand">
-                    <a href="/dc"><img src="../../../public/dc_brand.png"/></a>
-                    </div>
-                    <div className="right-image">
-                    <a href="/dc"><img src="../../../public/dc-comics.jpg"/></a>
-                    </div>
+                <h1 className="home-msg">- Seleccione una marca de comics -</h1>
+                <div className="table-container">
+                <table className="studios">
+                    <tbody>
+                    <tr>
+                        <td className="brand"><img src="../../public/marvel_brand.png" ></img></td>
+                        <td><p>Marvel Studios</p></td>
+                        <td>
+                            <Link to="/marvel">
+                                Ir
+                            </Link>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="brand"><img src="../../public/dc_brand.png"></img></td>
+                        <td><p>DC Studios</p></td>
+                        <td>
+                            <Link to="/dc">
+                                Ir
+                            </Link>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 </div>
+               
             </div>
-            <Footer/>
         </React.Fragment>
     );
 }

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 
 
-function useInitialState(endpoint){
+function useInitialState(endpoint, single){
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
@@ -10,7 +10,10 @@ function useInitialState(endpoint){
             .then((response) => response.json())
             .then((data) => setCharacters(data));
     }, []);
+    
     return characters;
+    
+    
 }
 
 export default useInitialState;
